@@ -6,4 +6,4 @@ import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
 	<BrowserRouter><BooksApp /></BrowserRouter>,
-	document.getElementById('root'))
+	document.getElementById('root'));
