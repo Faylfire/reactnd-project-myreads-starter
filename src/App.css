@@ -5,20 +5,40 @@ body {
   line-height: 1.5;
 }
 body, .app {
-  background: white;
+  background: #D7CCC8;
 }
+
+
+/*Material Palette Brown and Blue Grey*/
+
+.dark-primary-color    { background: #5D4037; }
+.default-primary-color { background: #795548; }
+.light-primary-color   { background: #D7CCC8; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #607D8B; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+
 
 /* main page */
 
 .list-books-title {
+  position: fixed;
+  width: 100%;
   padding: 10px 0;
-  background: #2e7c31;
+  top: 0;
+  z-index: 100;
+  /*background: #68a0b0;*/
   text-align: center;
+}
+.title-padding {
+  height:120px;
 }
 .list-books-title h1 {
   font-weight: 400;
   margin: 0;
-  color: white;
+  /*color: #eaebe6;*/
 }
 
 .list-books-content {
@@ -37,7 +57,8 @@ body, .app {
 }
 
 .bookshelf-title {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #BDBDBD;
+  /*color:#82919a*/;
 }
 .bookshelf-books {
   text-align: center;
@@ -53,12 +74,33 @@ body, .app {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #2e7d32;
+  /*background: #2e7d32;*/
   background-image: url('./icons/add.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 28px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-size: 0;
+}
+
+.open-search {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+
+/*Logo for the Title Bar*/
+.book-logo {
+  display: block;
+  top: 20px;
+  left: 15px;
+  width: 50px;
+  height: 53px;
+  margin:auto;
+  background-image: url('./icons/bookLogo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 48px;
   font-size: 0;
 }
 
@@ -123,15 +165,21 @@ body, .app {
   width: 140px;
 }
 .book-title,
-.book-authors {
+.book-authors,
+.book-published {
   font-size: 0.8em;
 }
 .book-title {
   margin-top: 10px;
+  font-weight: bold;
 }
 .book-authors {
-  color: #999;
+  font-weight: bold;
 }
+/*.book-published {
+  color: #37393d;
+}*/
+
 
 .book-top {
   position: relative;
@@ -147,7 +195,7 @@ body, .app {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #60ac5d;
+  /*background: #60ac5d;*/
   background-image: url('./icons/arrow-drop-down.svg');
   background-repeat: no-repeat;
   background-position: center;
