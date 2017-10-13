@@ -6,13 +6,17 @@ import ListBooks from './ListBooks'
 import {Route} from 'react-router-dom'
 
 class BooksApp extends React.Component {
-  state = {
-    showSearchPage: false,
-    query: "",
-    shelves: ["Currently Reading", "Want to Read", "Read"],
-    results:[],
-    myBooks:[],
-    shelfIndex:{}
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      showSearchPage: false,
+      query: "",
+      shelves: ["Currently Reading", "Want to Read", "Read"],
+      results:[],
+      myBooks:[],
+      shelfIndex:{}
+    }
   }
 
 
