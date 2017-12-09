@@ -5,5 +5,5 @@ import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
-	<BrowserRouter><BooksApp /></BrowserRouter>,
+	<BrowserRouter basename={process.env.PUBLIC_URL} ><BooksApp /></BrowserRouter>,
 	document.getElementById('root'));
