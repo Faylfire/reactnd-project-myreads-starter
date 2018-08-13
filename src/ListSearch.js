@@ -46,7 +46,7 @@ class ListSearch extends Component{
             <input
               className="search-books"
               type="text"
-              placeholder="Search by title or author"
+              placeholder="Search by title or author (limited search terms, try: Fantasy)"
               value={query}
               onChange={(event) => this.updateQuery(event.target.value)}
             />
